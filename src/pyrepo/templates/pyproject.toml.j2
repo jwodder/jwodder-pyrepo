@@ -13,7 +13,7 @@ description = "{{short_description}}"
 readme = "README.rst"
 requires-python = "{{python_requires}}"
 license = "MIT"
-license-files = { paths = ["LICENSE"] }
+license-files = ["LICENSE"]
 authors = [
     { name = "{{author}}", email = "{{author_email}}" }
 ]
@@ -38,7 +38,6 @@ classifiers = [
 {% if supports_pypy %}
     "Programming Language :: Python :: Implementation :: PyPy",
 {% endif %}
-    "License :: OSI Approved :: MIT License",
     ###
 {% if has_typing %}
     "Typing :: Typed",
